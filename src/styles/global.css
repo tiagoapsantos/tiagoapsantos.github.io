@@ -557,3 +557,5 @@ h1 { max-width: 900px; margin-bottom: 27px; font-family: var(--display); font-si
 
 .project-gallery-myjobs .project-image-link { aspect-ratio: 3 / 2; }
 .project-gallery-myjobs .project-image-link img { width: 100%; height: 100%; object-fit: cover; object-position: top; }
+
+.project-card-featured .project-gallery-pedro { grid-template-columns: minmax(0, 1fr); width: 78%; margin-inline: auto; }

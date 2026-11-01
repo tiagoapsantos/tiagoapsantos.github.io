@@ -11,12 +11,12 @@ tags: [Astro, TypeScript, CSS, WebP, GitHub Pages]
 images:
   - src: /images/projects/pedro-pires/home.webp
     width: 1425
-    height: 1089
-    alt: "Published Homepage with the Pedro Pires identity, navigation and composition of five illustrated panels."
+    height: 904
+    alt: "Pedro Pires homepage with navigation and a composition of five illustrated panels."
   - src: /images/projects/pedro-pires/gallery.webp
     width: 1425
-    height: 1089
-    alt: "Published Gallery with category filters and illustrations at their natural proportions."
+    height: 918
+    alt: "Pedro Pires gallery with category filters and two comic illustrations."
   - src: /images/projects/pedro-pires/mobile.webp
     width: 375
     height: 961

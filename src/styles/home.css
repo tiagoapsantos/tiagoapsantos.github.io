@@ -1,9 +1,12 @@
 /* Homepage refinements shared by PT/EN; other page layouts stay unchanged. */
-:root .home-hero { grid-template-columns:minmax(0, 1fr) auto; gap:clamp(24px,4vw,56px); min-height:0; padding-block:clamp(48px,6vw,80px); }
+:root .home-hero { grid-template-columns:minmax(0, 1fr) minmax(0, 220px); column-gap:clamp(24px,4vw,56px); min-height:0; padding-block:clamp(36px,4.5vw,60px) clamp(32px,4vw,52px); }
 :root .home-hero-copy { min-width:0; }
-:root .home-hero h1 { max-width:22ch; margin:0 0 24px; font:600 clamp(32px,4vw,56px)/1.12 var(--display); letter-spacing:-.05em; text-wrap:balance; overflow-wrap:break-word; }
+:root .home-hero h1 { max-width:22ch; margin:0 0 18px; font:600 clamp(32px,4vw,56px)/1.12 var(--display); letter-spacing:-.05em; text-wrap:balance; overflow-wrap:break-word; }
 :root .home-hero-subtitle { max-width:48ch; font-size:clamp(19px,1.7vw,23px); line-height:1.4; letter-spacing:-.025em; }
-:root .home-hero-description { max-width:66ch; line-height:1.7; }
+:root .home-hero-description { max-width:66ch; margin-bottom:22px; line-height:1.7; }
+:root .home-hero .eyebrow { margin-bottom:16px; }
+:root .home-hero .hero-actions { gap:12px 18px; }
+:root .home-hero-signature { justify-self:start; margin-left:0; }
 :root .signature-name { font-size:21px; letter-spacing:.025em; }
 :root .home-profile, :root .home-areas, :root .home-contact { padding-block:clamp(44px,5vw,72px); }
 :root .home-projects { padding-block:clamp(44px,5vw,72px); }
@@ -17,9 +20,9 @@
 :root .home-project-card p { margin:0 0 20px; font-size:15px; line-height:1.7; }
 :root .home-project-card .home-case-study-link { margin-top:14px; }
 :root .home-project-art { display:none; }
-@media(max-width:850px) {
-:root .home-hero { grid-template-columns:minmax(0,1fr); gap:28px; }
-:root .home-hero-signature { justify-self:start; }
+@media(max-width:700px) {
+:root .home-hero { grid-template-columns:minmax(0,1fr); gap:22px; }
+:root .home-hero-signature { justify-self:start; margin-left:0; }
 }
 
 :root .home-project-image { width:100%; aspect-ratio:16 / 7; overflow:hidden; margin-bottom:20px; background:var(--surface); }

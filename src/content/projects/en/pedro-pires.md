@@ -19,7 +19,7 @@ images:
     alt: "Pedro Pires gallery with category filters and two comic illustrations."
   - src: /images/projects/pedro-pires/mobile.webp
     width: 375
-    height: 961
+    height: 3906
     alt: "Published mobile Homepage with bilingual navigation and the five-panel composition."
 ---
 

@@ -19,7 +19,7 @@ images:
     alt: "Galeria de Pedro Pires com filtros por categoria e duas ilustrações de banda desenhada."
   - src: /images/projects/pedro-pires/mobile.webp
     width: 375
-    height: 961
+    height: 3906
     alt: "Homepage publicada em mobile, com navegação bilingue e imagem dos cinco painéis."
 ---
 

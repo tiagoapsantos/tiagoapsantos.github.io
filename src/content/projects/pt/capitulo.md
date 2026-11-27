@@ -37,6 +37,14 @@ Cada confraria tem página inicial, notícias, capítulos e eventos com programa
 
 Next.js e Payload CMS num só projeto, com o plugin oficial multi-cliente: cada organização é um inquilino e os conteúdos ficam separados. Há quatro perfis (administrador, gestor da federação, gestor de confraria e editor) com regras de acesso verificadas por script. O painel foi traduzido para português de Portugal. O site público não tem formulários nem contas de visitantes, o que reduz os dados pessoais ao mínimo e permite gerar uma versão estática.
 
+## Pesquisa, calendário e partilha
+
+Cada site tem uma página de pesquisa. No servidor, procura nos títulos de notícias, eventos, receitas, galerias e páginas da organização; na demonstração estática, sem servidor, usa um índice do Pagefind criado durante a exportação e filtrado por organização. Os eventos podem ser acrescentados à agenda pessoal (ficheiros .ics, um por evento e um calendário por organização) e têm dados estruturados (schema.org) para os motores de pesquisa. Todas as páginas têm metadados de partilha (Open Graph).
+
+## Segurança e qualidade
+
+Contas bloqueadas durante 15 minutos após 5 tentativas falhadas, envio de ficheiros limitado a imagens (JPEG, PNG, WebP) e PDF até 10 MB (sem SVG), GraphQL desligado e endereço público configurado por variável de ambiente. Um script confirma 16 regras de acesso entre perfis e organizações; outro testa a acessibilidade das páginas principais com o axe (WCAG 2.1 A e AA). Estas verificações correm automaticamente no GitHub Actions a cada alteração.
+
 ## Limitações
 
 A demonstração pública é uma versão estática do site (sem o painel de gestão), gerada a partir do projeto; o código-fonte está disponível no GitHub para consulta (todos os direitos reservados). Em desenvolvimento usa SQLite; para produção está prevista a passagem para PostgreSQL num alojamento na União Europeia. A declaração de acessibilidade ainda não foi validada por uma avaliação formal.

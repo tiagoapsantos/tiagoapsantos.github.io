@@ -37,6 +37,14 @@ Each brotherhood has a home page, news, ceremonies and events with a programme, 
 
 Next.js and Payload CMS in a single project, with the official multi-tenant plugin: each organisation is a tenant and its content is kept separate. There are four roles (administrator, federation manager, brotherhood manager and editor) with access rules checked by a script. The panel was translated into European Portuguese. The public site has no forms or visitor accounts, which keeps personal data to a minimum and allows a static version to be generated.
 
+## Search, calendar and sharing
+
+Each site has a search page. On the server it searches the titles of news, events, recipes, galleries and pages of the organisation; on the static demo, with no server, it uses a Pagefind index built during the export and filtered by organisation. Events can be added to a personal calendar (.ics files, one per event and one calendar per organisation) and include structured data (schema.org) for search engines. Every page has sharing metadata (Open Graph).
+
+## Security and quality
+
+Accounts are locked for 15 minutes after 5 failed sign-in attempts, uploads are limited to images (JPEG, PNG, WebP) and PDF up to 10 MB (no SVG), GraphQL is disabled and the public address is set through an environment variable. A script checks 16 access rules across roles and organisations; another tests the accessibility of the main pages with axe (WCAG 2.1 A and AA). These checks run automatically on GitHub Actions on every change.
+
 ## Limitations
 
 The public demo is a static version of the site (without the admin panel), generated from the project; the source code is available on GitHub for viewing (all rights reserved). Development uses SQLite; production is planned on PostgreSQL with hosting in the European Union. The accessibility statement has not yet been validated by a formal audit.

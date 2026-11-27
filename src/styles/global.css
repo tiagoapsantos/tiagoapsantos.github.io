@@ -558,10 +558,12 @@ h1 { max-width: 900px; margin-bottom: 27px; font-family: var(--display); font-si
 .project-gallery-myjobs .project-image-link { aspect-ratio: 3 / 2; }
 .project-gallery-myjobs .project-image-link img { width: 100%; height: 100%; object-fit: cover; object-position: top; }
 
-.project-card-featured .project-gallery-pedro { grid-template-columns: minmax(0, 1fr); width: 78%; margin-inline: auto; }
+.project-card-featured .project-gallery-pedro,
+.project-card-featured .project-gallery-capitulo { grid-template-columns: minmax(0, 1fr); width: 78%; margin-inline: auto; }
 
 @media (max-width: 700px) {
-  .project-card-featured .project-gallery-pedro { width: 100%; gap: 10px; }
+  .project-card-featured .project-gallery-pedro,
+  .project-card-featured .project-gallery-capitulo { width: 100%; gap: 10px; }
 }
 
 @media (max-width: 340px) { .wordmark:not(.wordmark-home) { font-size: 18px; } }

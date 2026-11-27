@@ -398,7 +398,6 @@ h1 { max-width: 900px; margin-bottom: 27px; font-family: var(--display); font-si
 .project-image-link { display: block; overflow: hidden; border: 1px solid var(--line); background: var(--wash); box-shadow: 0 10px 24px color-mix(in srgb, var(--ink) 12%, transparent); transition: transform .25s ease, box-shadow .25s ease; }
 .project-image-link:hover { transform: translateY(-4px) scale(1.01); box-shadow: 0 16px 30px color-mix(in srgb, var(--ink) 18%, transparent); }
 .project-image-link:focus-visible { outline: 3px solid var(--accent-strong); outline-offset: 4px; }
-.project-gallery-smart .project-image-link img { display: block; width: 100%; height: auto; border: 0; }
 .page-heading h1 { max-width: 900px; margin: 0 0 20px; }
 .page-heading .eyebrow { margin-bottom: 20px; }
 .page-intro { max-width: 690px; margin-top: 20px; color: var(--muted); font-size: 18px; }
@@ -481,7 +480,7 @@ h1 { max-width: 900px; margin-bottom: 27px; font-family: var(--display); font-si
   .project-card-featured { grid-template-columns: 1fr; gap: 30px; padding: 26px; }
   .project-card-rich { padding: 26px; }
   .project-card-rich::before { left: 26px; }
-  .project-card-featured .project-gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .project-card-featured .project-gallery:not(.project-gallery-stack) { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .project-card-concept { min-height: 270px; }
   .page-heading { padding: 72px 0 38px; }
   .editorial-heading, .editorial-section, .contact-layout, .contact-next { width: min(100% - 36px, var(--page-width)); }
@@ -555,15 +554,14 @@ h1 { max-width: 900px; margin-bottom: 27px; font-family: var(--display); font-si
   .language-link { border-left: 0; padding-left: 0; }
 }
 
-.project-gallery-myjobs .project-image-link { aspect-ratio: 3 / 2; }
-.project-gallery-myjobs .project-image-link img { width: 100%; height: 100%; object-fit: cover; object-position: top; }
 
-.project-card-featured .project-gallery-pedro,
-.project-card-featured .project-gallery-capitulo { grid-template-columns: minmax(0, 1fr); width: 78%; margin-inline: auto; }
+/* Todos os projetos: duas imagens empilhadas, com a mesma proporção (1425 × 904), cortadas a partir do topo. */
+.project-card-featured .project-gallery-stack { grid-template-columns: minmax(0, 1fr); width: 78%; margin-inline: auto; }
+.project-gallery-stack .project-image-link { aspect-ratio: 1425 / 904; }
+.project-gallery-stack .project-image-link img { width: 100%; height: 100%; object-fit: cover; object-position: top; border: 0; }
 
 @media (max-width: 700px) {
-  .project-card-featured .project-gallery-pedro,
-  .project-card-featured .project-gallery-capitulo { width: 100%; gap: 10px; }
+  .project-card-featured .project-gallery-stack { width: 100%; gap: 10px; }
 }
 
 @media (max-width: 340px) { .wordmark:not(.wordmark-home) { font-size: 18px; } }

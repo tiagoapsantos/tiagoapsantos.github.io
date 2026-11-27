@@ -38,3 +38,18 @@
 /* Cartão final "Todos os projetos": ocupa o lugar vazio da grelha. */
 :root .home-project-more { justify-content:center; border-style:dashed; }
 :root .home-project-more .home-project-links { margin-top:4px; }
+
+/* Banner da página inicial: mais alto, com fundo minimalista (public/images/brand/hero-fundo.svg). */
+.home-hero-banner { position:relative; overflow:hidden; border-bottom:1px solid var(--line); background:
+  linear-gradient(90deg, var(--paper) 0%, color-mix(in srgb, var(--paper) 85%, transparent) 38%, transparent 70%),
+  url('/images/brand/hero-fundo.svg') right center / cover no-repeat,
+  var(--paper); }
+:root .home-hero-banner .home-hero { min-height:clamp(460px, 68vh, 680px); padding-block:clamp(64px, 9vw, 120px); }
+:root .home-hero-banner .home-hero h1 { font-size:clamp(36px, 4.6vw, 66px); }
+@media(max-width:700px) {
+  .home-hero-banner { background:
+    linear-gradient(180deg, transparent 0%, color-mix(in srgb, var(--paper) 35%, transparent) 45%, var(--paper) 92%),
+    url('/images/brand/hero-fundo.svg') calc(100% + 280px) -70px / auto 560px no-repeat,
+    var(--paper); }
+  :root .home-hero-banner .home-hero { min-height:0; padding-block:56px 44px; }
+}

@@ -34,18 +34,7 @@ const socialTitle = `${title} · Tiago Santos`;
     <meta name="twitter:title" content={socialTitle} />
     <meta name="twitter:description" content={description} />
     {socialImage && <meta name="twitter:image" content={socialImage} />}
-    <meta name="theme-color" content="#f5f2eb" />
-    <script is:inline>
-      (() => {
-        const root = document.documentElement;
-        try {
-          const savedTheme = localStorage.getItem('portfolio-theme');
-          root.dataset.theme = savedTheme === 'light' || savedTheme === 'dark' ? savedTheme : 'dark';
-        } catch {
-          root.dataset.theme = 'dark';
-        }
-      })();
-    </script>
+    <meta name="theme-color" content="#171c1a" />
     {canonical && <link rel="canonical" href={canonical} />}
     {canonical && translatedUrl && <><link rel="alternate" hreflang={locale === 'pt' ? 'pt-PT' : 'en'} href={canonical} /><link rel="alternate" hreflang={locale === 'pt' ? 'en' : 'pt-PT'} href={translatedUrl} /></>}
     <link rel="icon" type="image/x-icon" href={`${base}favicon.ico`} />

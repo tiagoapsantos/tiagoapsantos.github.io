@@ -10,7 +10,7 @@ description: Website platform for gastronomic brotherhoods and their federation,
 tags: [Next.js, Payload CMS, TypeScript, SQLite, Multi-tenant]
 video:
   src: /videos/capitulo-painel.webm
-  poster: /images/projects/capitulo-cms.webp
+  poster: /images/projects/galeria/capitulo-cms-1100.webp
   title: Capítulo admin panel demo — open the home screen, create an event, publish it and see it on the site.
   width: 1280
   height: 800

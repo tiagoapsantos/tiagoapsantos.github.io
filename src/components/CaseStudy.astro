@@ -64,7 +64,7 @@ const captureIntro = artistWebsite
             <figcaption><span class="project-index">{String(index + 1).padStart(2, '0')}</span> {image.alt}</figcaption>
           </figure>)}
           {video && <figure class="case-study-video">
-            <video src={`${base}${video.src.replace(/^\/+/, '')}`} poster={video.poster ? `${base}${video.poster.replace(/^\/+/, '')}` : undefined} width={video.width} height={video.height} controls muted loop playsinline preload="metadata" aria-label={video.title} title={video.title}>{english ? 'Video demo' : 'Demonstração em vídeo'}</video>
+            <video src={`${base}${video.src.replace(/^\/+/, '')}`} poster={video.poster ? `${base}${video.poster.replace(/^\/+/, '')}` : undefined} width={video.width} height={video.height} controls muted loop playsinline preload="none" aria-label={video.title} title={video.title}>{english ? 'Video demo' : 'Demonstração em vídeo'}</video>
             <figcaption><span class="project-index">{String(images.length + 1).padStart(2, '0')}</span> {video.title}</figcaption>
           </figure>}
         </section>}

@@ -232,7 +232,7 @@
   --display: 'Space Grotesk', 'Aptos Display', 'Segoe UI', sans-serif;
   --sans: 'DM Sans', 'Aptos', 'Segoe UI', sans-serif;
   --mono: 'DM Mono', Consolas, monospace;
-  --page-width: 1120px;
+  --page-width: 1380px;
 }
 :root[data-theme='dark'] {
   color-scheme: dark;
@@ -256,7 +256,7 @@ a:hover { color: var(--accent-strong); }
 button, a { -webkit-tap-highlight-color: transparent; }
 button { font: inherit; }
 ::selection { background: var(--accent-soft); color: var(--ink); }
-.container { width: min(var(--page-width), calc(100% - 56px)); margin-inline: auto; }
+.container { width: min(var(--page-width), calc(100% - 80px)); margin-inline: auto; }
 .site-header { position: relative; z-index: 2; border-bottom: 1px solid var(--line); background: var(--paper); }
 .header-inner { min-height: 120px; display: flex; align-items: center; justify-content: space-between; gap: 32px; padding-block: 8px; }
 .wordmark { display: inline-flex; align-items: center; gap: 14px; font-family: var(--display); font-size: 26px; font-weight: 700; letter-spacing: -.045em; text-decoration: none; white-space: nowrap; }

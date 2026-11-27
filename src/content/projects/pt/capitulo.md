@@ -10,7 +10,7 @@ description: Plataforma de sites para confrarias gastronómicas e a sua federaç
 tags: [Next.js, Payload CMS, TypeScript, SQLite, Multi-tenant]
 video:
   src: /videos/capitulo-painel.webm
-  poster: /images/projects/capitulo-cms.webp
+  poster: /images/projects/galeria/capitulo-cms-1100.webp
   title: Demonstração do painel do Capítulo — abrir o Início, marcar um evento, publicar e vê-lo no site.
   width: 1280
   height: 800

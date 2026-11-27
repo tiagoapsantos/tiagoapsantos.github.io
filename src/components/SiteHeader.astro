@@ -20,7 +20,7 @@ const languageHref = alternateHref ?? (isEnglish ? `${base}${active ? `${active}
         <a href={route('about')} aria-current={active === 'about' ? 'page' : undefined}>{labels.about}</a>
         <a href={route('contact')} aria-current={active === 'contact' ? 'page' : undefined}>{labels.contact}</a>
       </nav>
-      <a class="language-link" href={languageHref} lang={isEnglish ? 'pt-PT' : 'en'} aria-label={isEnglish ? 'Ver em português' : 'View in English'}>{isEnglish ? 'PT' : 'EN'}</a>
+      <a class="language-link" href={languageHref} lang={isEnglish ? 'pt-PT' : 'en'} aria-label={isEnglish ? 'PT — Ver em português' : 'EN — View in English'}>{isEnglish ? 'PT' : 'EN'}</a>
       <button class="theme-toggle" type="button" data-theme-toggle aria-label={isEnglish ? 'Switch to light theme' : 'Mudar para tema claro'} title={isEnglish ? 'Change colour theme' : 'Alterar tema de cores'}><span class="theme-icon" aria-hidden="true">◐</span></button>
     </div>
   </div>

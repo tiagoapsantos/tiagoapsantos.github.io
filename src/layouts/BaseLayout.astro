@@ -3,7 +3,17 @@ import '../styles/global.css';
 import SiteHeader from '../components/SiteHeader.astro';
 import SiteFooter from '../components/SiteFooter.astro';
 interface Props { title: string; description: string; locale: 'pt' | 'en'; active?: string; alternateHref?: string; }
-const { title, description, locale, active, alternateHref } = Astro.props;
+const { title, description: descricaoCompleta, locale, active, alternateHref } = Astro.props;
+// O Google mostra cerca de 155 carateres: usa as frases que cabem ou corta numa palavra.
+const resumir = (texto: string, max = 155) => {
+  if (texto.length <= max) return texto;
+  const frases = texto.match(/[^.!?]+[.!?]+(\s|$)/g) ?? [];
+  let r = '';
+  for (const f of frases) { if ((r + f).trim().length > max) break; r += f; }
+  if (r.trim().length >= 80) return r.trim();
+  return texto.slice(0, max - 1).replace(/[\s,;:]+\S*$/, '') + '…';
+};
+const description = resumir(descricaoCompleta);
 const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
 const baseRoot = base.slice(0, -1);
 const pathname = Astro.url.pathname;

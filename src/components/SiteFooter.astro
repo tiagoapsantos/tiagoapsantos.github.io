@@ -5,6 +5,10 @@ const isEnglish = locale === 'en';
 <footer class="site-footer">
   <div class="container footer-inner">
     <p>© {new Date().getFullYear()} Tiago Santos</p>
-    <p class="footer-note">{isEnglish ? 'A portfolio in progress.' : 'Um portefólio em construção.'}</p>
+    <nav class="footer-links" aria-label={isEnglish ? 'Contacts' : 'Contactos'}>
+      <a href="https://github.com/tiagoapsantos" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+      <a href="https://www.linkedin.com/in/tiago-ap-santos/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+      <a href="mailto:tapssantos@gmail.com">E-mail</a>
+    </nav>
   </div>
 </footer>

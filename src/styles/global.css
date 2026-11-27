@@ -549,3 +549,12 @@ h1 { max-width: 900px; margin-bottom: 27px; font-family: var(--display); font-si
 }
 
 @media (max-width: 340px) { .wordmark:not(.wordmark-home) { font-size: 18px; } }
+
+/* Alvos de toque de pelo menos 44 px nas ligações isoladas (WCAG 2.5.8). */
+div > .text-link, .section-link .text-link, .case-study-header > .text-link, .case-study-footer > .text-link, .hero-actions .text-link { display: inline-flex; align-items: center; gap: 6px; min-height: 44px; }
+/* Rodapé: ligações de contacto. */
+.footer-links { display: flex; flex-wrap: wrap; gap: 0 22px; }
+.footer-links a { display: inline-flex; align-items: center; gap: 5px; min-height: 44px; color: var(--muted); font-family: var(--mono); font-size: 11px; letter-spacing: .06em; text-decoration: none; text-transform: uppercase; }
+.footer-links a:hover { color: var(--accent-strong); }
+/* Contacto: o primeiro cartão deixa de competir com o título da página. */
+.contact-feature h2 { font-size: clamp(27px, 3vw, 38px); line-height: 1.12; letter-spacing: -.055em; }

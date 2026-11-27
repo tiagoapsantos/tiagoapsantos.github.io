@@ -12,7 +12,7 @@ images:
   - src: /images/projects/capitulo-site.webp
     width: 1600
     height: 1160
-    alt: Página inicial do site de uma confraria fictícia, com fotografia de queijo, destaque e botões para o produto e o próximo capítulo.
+    alt: Página inicial da demonstração do Capítulo, com fotografia de uma aldeia de pedra, apresentação da plataforma e os sites das confrarias de exemplo.
   - src: /images/projects/capitulo-cms.webp
     width: 1600
     height: 1160

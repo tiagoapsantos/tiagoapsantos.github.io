@@ -12,7 +12,7 @@ images:
   - src: /images/projects/capitulo-site.webp
     width: 1600
     height: 1160
-    alt: Home page of a fictional brotherhood website, with a cheese photograph, hero text and buttons for the product and the next ceremony.
+    alt: Home page of the Capítulo demo, with a stone village photograph, the platform introduction and the sample brotherhood websites.
   - src: /images/projects/capitulo-cms.webp
     width: 1600
     height: 1160

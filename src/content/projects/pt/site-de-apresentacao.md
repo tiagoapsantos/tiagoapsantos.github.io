@@ -1,7 +1,7 @@
 ---
 locale: pt
-kind: Projecto pessoal · Demonstração funcional
-title: Forma & Grão — Business Website
+kind: Projeto pessoal · Demonstração funcional
+title: Forma & Grão — Website de apresentação
 caseStudy: true
 translationKey: business-website
 demoUrl: https://tiagoapsantos.github.io/business-website/
@@ -25,9 +25,9 @@ images:
 
 ## Contexto e problema
 
-Um pequeno negócio precisa de explicar o que faz, como trabalha e qual o próximo passo para quem chega ao website. O Forma & Grão transforma esse problema num projecto pessoal: um atelier **inteiramente fictício** de mobiliário por medida, restauro e planeamento de interiores.
+Um pequeno negócio precisa de explicar o que faz, como trabalha e qual o próximo passo para quem chega ao website. O Forma & Grão transforma esse problema num projeto pessoal: um atelier **inteiramente fictício** de mobiliário por medida, restauro e planeamento de interiores.
 
-A solução apresenta serviços e percurso de contacto, criando uma experiência verificável desde a descoberta do atelier até à preparação de um pedido. Não é trabalho contratado, nem representa uma empresa em actividade, clientes ou resultados comerciais.
+A solução apresenta serviços e percurso de contacto, criando uma experiência verificável desde a descoberta do atelier até à preparação de um pedido. Não é trabalho contratado, nem representa uma empresa em atividade, clientes ou resultados comerciais.
 
 ## Solução e percurso de utilização
 
@@ -40,15 +40,15 @@ O contacto fecha o percurso com uma alternativa honesta a um formulário sem bac
 - Navegação entre quatro páginas, com página 404 para endereços inexistentes.
 - Validação de nome, email, serviço e descrição, incluindo campos vazios e limites de tamanho.
 - Erros associados aos campos, resumo focável e mensagens de estado acessíveis.
-- Resumo textual e download real em UTF-8; alterações posteriores invalidam o resumo para evitar exportar uma versão desactualizada.
+- Resumo textual e download real em UTF-8; alterações posteriores invalidam o resumo para evitar exportar uma versão desatualizada.
 - Limpeza dos campos e apresentação de texto com `textContent`, sem interpretar HTML introduzido.
 - Layout responsivo, foco visível, imagem principal em WebP e ilustração SVG na página sobre, com texto alternativo e dimensões definidas.
 
-## Arquitectura e decisões técnicas
+## Arquitetura e decisões técnicas
 
 HTML semântico é gerado por módulos JavaScript que partilham navegação, rodapé e componentes de apresentação. O conteúdo dos serviços está separado da renderização. A lógica de validação e criação do resumo é um módulo puro, reutilizado nos testes.
 
-O Node.js nativo gera os ficheiros estáticos e serve o preview. Não há dependências npm, fontes remotas ou biblioteca de interface. Esta escolha mantém a execução simples e deixa claro o que efectivamente é implementado. Não foi acrescentado um servidor de aplicação para simular um contacto comercial.
+O Node.js nativo gera os ficheiros estáticos e serve o preview. Não há dependências npm, fontes remotas ou biblioteca de interface. Esta escolha mantém a execução simples e deixa claro o que efetivamente é implementado. Não foi acrescentado um servidor de aplicação para simular um contacto comercial.
 
 ## Testes e validação
 

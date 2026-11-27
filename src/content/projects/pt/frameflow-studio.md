@@ -1,6 +1,6 @@
 ---
 locale: pt
-kind: Demonstração técnica · Projecto pessoal
+kind: Demonstração técnica · Projeto pessoal
 title: FrameFlow Studio
 translationKey: frameflow-studio
 caseStudy: true
@@ -18,17 +18,17 @@ images:
     alt: Timeline da composição demonstrativa com camadas, propriedades e marcadores de keyframes.
 ---
 
-## Contexto e objectivo
+## Contexto e objetivo
 
-O FrameFlow Studio é um projecto pessoal de demonstração para portefólio que explora a criação de animações 2D a partir de imagens estáticas. Não é um produto comercial e não existe uma demonstração web pública da aplicação. O código-fonte está disponível no GitHub.
+O FrameFlow Studio é um projeto pessoal de demonstração para portefólio que explora a criação de animações 2D a partir de imagens estáticas. Não é um produto comercial e não existe uma demonstração web pública da aplicação. O código-fonte está disponível no GitHub.
 
 ## Funcionalidades
 
-O protótipo permite importar PNG e WebP, posicionar camadas num editor visual, definir keyframes e controlar tempos numa timeline. Inclui pré-visualização Remotion, referências visuais, biblioteca de projectos local e backups portáteis. A exportação MP4 é executada localmente.
+O protótipo permite importar PNG e WebP, posicionar camadas num editor visual, definir keyframes e controlar tempos numa timeline. Inclui pré-visualização Remotion, referências visuais, biblioteca de projetos local e backups portáteis. A exportação MP4 é executada localmente.
 
 ## Decisões técnicas
 
-React, TypeScript e Konva suportam a interface; o motor de animação baseado em JSON é partilhado pelo Player e pelo renderizador Remotion. O IndexedDB guarda os projectos e as imagens no navegador. Os backups mantêm as referências visuais separadas dos assets do vídeo.
+React, TypeScript e Konva suportam a interface; o motor de animação baseado em JSON é partilhado pelo Player e pelo renderizador Remotion. O IndexedDB guarda os projetos e as imagens no navegador. Os backups mantêm as referências visuais separadas dos assets do vídeo.
 
 ## Limitações
 

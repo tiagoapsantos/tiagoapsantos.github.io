@@ -30,3 +30,11 @@
 
 :root .home-project-external { position:relative; z-index:2; display:flex; flex-wrap:wrap; gap:4px 22px; margin-top:4px; }
 :root .home-project-external .text-link { display:inline-flex; align-items:center; gap:6px; min-height:44px; }
+
+/* Ligações do cartão numa só fila (estudo de caso, demonstração, GitHub). */
+:root .home-project-links { position:relative; z-index:2; display:flex; flex-wrap:wrap; align-items:center; gap:0 22px; margin-top:14px; }
+:root .home-project-links .text-link, :root .home-project-card .home-project-links .home-case-study-link { display:inline-flex; align-items:center; gap:6px; min-height:44px; margin:0; }
+:root .home-project-links .home-project-external { display:contents; }
+/* Cartão final "Todos os projetos": ocupa o lugar vazio da grelha. */
+:root .home-project-more { justify-content:center; border-style:dashed; }
+:root .home-project-more .home-project-links { margin-top:4px; }

@@ -1,7 +1,7 @@
 ---
 locale: pt
 kind: Website profissional · Publicado
-title: Pedro Pires — Illustration and Design
+title: Pedro Pires — Ilustração e Design
 caseStudy: true
 translationKey: pedro-pires
 demoUrl: https://tiagoapsantos.github.io/pedro-pires-portfolio/
@@ -23,23 +23,23 @@ images:
     alt: "Homepage publicada em mobile, com navegação bilingue e imagem dos cinco painéis."
 ---
 
-## Contexto e objectivo
+## Contexto e objetivo
 
 Desenvolvi um website profissional para apresentar o trabalho do ilustrador **Pedro Pires**. Para dar prioridade às imagens, a solução combina uma galeria filtrável e visualização ampliada com navegação simples e versões em português e inglês.
 
 ## Autoria e responsabilidades
 
-**Pedro Pires é o autor das ilustrações.** O meu trabalho foi o desenvolvimento do website, a implementação da interface, a organização da galeria, a optimização dos recursos e a publicação, com assistência de ferramentas de IA. As ilustrações não são da minha autoria.
+**Pedro Pires é o autor das ilustrações.** O meu trabalho foi o desenvolvimento do website, a implementação da interface, a organização da galeria, a otimização dos recursos e a publicação, com assistência de ferramentas de IA. As ilustrações não são da minha autoria.
 
 ## Interface e percurso
 
-A identidade Dark Graphic Novel combina fundo escuro e tipografia Bebas Neue e Space Grotesk. A Homepage abre com uma composição de cinco painéis ilustrados e uma selecção de imagens. A galeria reúne **81 obras**, com filtros por categoria e visualização ampliada nas proporções originais.
+A identidade Dark Graphic Novel combina fundo escuro e tipografia Bebas Neue e Space Grotesk. A Homepage abre com uma composição de cinco painéis ilustrados e uma seleção de imagens. A galeria reúne **81 obras**, com filtros por categoria e visualização ampliada nas proporções originais.
 
 O visitante pode alternar PT/EN mantendo a página, seleccionar uma categoria e navegar nas ilustrações ampliadas com as setas do teclado. Escape fecha a visualização e o foco regressa à imagem de origem. O layout adapta-se a desktop, tablet e mobile.
 
 ## Implementação e publicação
 
-Astro gera as páginas estáticas, com TypeScript para a lógica e CSS para apresentação e responsividade. As imagens são optimizadas em WebP. Fontes locais, carregamento diferido e dimensões explícitas ajudam a controlar o carregamento.
+Astro gera as páginas estáticas, com TypeScript para a lógica e CSS para apresentação e responsividade. As imagens são otimizadas em WebP. Fontes locais, carregamento diferido e dimensões explícitas ajudam a controlar o carregamento.
 
 A publicação no GitHub Pages é automatizada por GitHub Actions, com instalação de dependências, testes, verificação de TypeScript, build e auditoria dos recursos públicos. Os ficheiros originais privados não entram na publicação.
 

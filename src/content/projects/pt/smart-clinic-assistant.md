@@ -26,7 +26,7 @@ images:
     alt: "Detalhe completo do pedido fictício de Ana Demonstração, com contacto e mensagem predefinidos, disponibilidade e estado, sobre o dashboard."
 ---
 
-## Contexto e objectivo
+## Contexto e objetivo
 
 O Smart Clinic Assistant é uma **demonstração pública e fictícia**, disponível no GitHub Pages, de um fluxo de pedidos e gestão administrativa. Não se destina a marcações reais nem a dados clínicos ou pessoais reais. O exercício combina um formulário de simulação com um dashboard de pesquisa e gestão de estados, explorando a organização da informação e a clareza da interface.
 
@@ -64,10 +64,10 @@ localStorage não é armazenamento seguro, encriptado ou sincronizado. As subpas
 
 A aplicação possui **12 testes automatizados essenciais aprovados**: cenários predefinidos, rejeição de dados arbitrários, validação, persistência, limites, isolamento da chave antiga, recursos estáticos e operações de apagar/repor. Quatro testes executam os handlers reais com aceitar/cancelar simulados, verificando dados, contadores e feedback. Isto não equivale a uma auditoria integral ou a testes nativos em todos os browsers.
 
-As três capturas foram recolhidas directamente da demonstração pública em português, com identidades e contactos fictícios, à mesma resolução e escala. Não se reivindicam utilização por uma clínica, testes clínicos ou resultados de negócio.
+As três capturas foram recolhidas diretamente da demonstração pública em português, com identidades e contactos fictícios, à mesma resolução e escala. Não se reivindicam utilização por uma clínica, testes clínicos ou resultados de negócio.
 
 ## Aprendizagens e próximos passos
 
-O projecto demonstra a passagem de uma simulação de formulário para uma vista de operações, a coerência entre estados e contadores e a importância de limitar os dados aceites por uma demonstração pública.
+O projeto demonstra a passagem de uma simulação de formulário para uma vista de operações, a coerência entre estados e contadores e a importância de limitar os dados aceites por uma demonstração pública.
 
-Próximos passos possíveis são ampliar a cobertura de browser, teclado, leitores de ecrã e situações de erro. Um eventual sistema real exigiria requisitos próprios de segurança e privacidade; o alojamento estático e o armazenamento local desta demonstração não satisfazem esse objectivo.
+Próximos passos possíveis são ampliar a cobertura de browser, teclado, leitores de ecrã e situações de erro. Um eventual sistema real exigiria requisitos próprios de segurança e privacidade; o alojamento estático e o armazenamento local desta demonstração não satisfazem esse objetivo.

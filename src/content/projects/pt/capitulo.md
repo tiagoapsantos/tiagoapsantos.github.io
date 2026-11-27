@@ -8,6 +8,12 @@ demoUrl: https://tiagoapsantos.github.io/capitulo-demo/
 sourceUrl: https://github.com/tiagoapsantos/capitulo-cms
 description: Plataforma de sites para confrarias gastronómicas e a sua federação, com um painel de gestão (CMS) multi-cliente pensado para quem não é técnico.
 tags: [Next.js, Payload CMS, TypeScript, SQLite, Multi-tenant]
+video:
+  src: /videos/capitulo-painel.webm
+  poster: /images/projects/capitulo-cms.webp
+  title: Demonstração do painel do Capítulo — abrir o Início, marcar um evento, publicar e vê-lo no site.
+  width: 1280
+  height: 800
 images:
   - src: /images/projects/capitulo-site.webp
     width: 1600

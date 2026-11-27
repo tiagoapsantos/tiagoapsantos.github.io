@@ -13,6 +13,7 @@ const projects = defineCollection({
     translationKey: z.string().optional(),
     demoUrl: z.string().url().startsWith('https://').optional(),
     sourceUrl: z.string().url().startsWith('https://').optional(),
+    video: z.object({ src: z.string(), poster: z.string().optional(), title: z.string(), width: z.number().int().positive(), height: z.number().int().positive() }).optional(),
     images: z.array(z.object({ src: z.string(), alt: z.string(), width: z.number().int().positive().optional(), height: z.number().int().positive().optional() })).optional(),
   }),
 });

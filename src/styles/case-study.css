@@ -49,3 +49,5 @@
 }
 
 .case-study-pedro .case-study-gallery figure:last-child > div { max-width: 375px; margin-inline: auto; }
+
+.case-study-video video { display: block; width: 100%; height: auto; border: 1px solid var(--line); background: var(--wash); }

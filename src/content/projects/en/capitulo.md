@@ -8,6 +8,12 @@ demoUrl: https://tiagoapsantos.github.io/capitulo-demo/
 sourceUrl: https://github.com/tiagoapsantos/capitulo-cms
 description: Website platform for gastronomic brotherhoods and their federation, with a multi-tenant content management panel (CMS) designed for non-technical users.
 tags: [Next.js, Payload CMS, TypeScript, SQLite, Multi-tenant]
+video:
+  src: /videos/capitulo-painel.webm
+  poster: /images/projects/capitulo-cms.webp
+  title: Capítulo admin panel demo — open the home screen, create an event, publish it and see it on the site.
+  width: 1280
+  height: 800
 images:
   - src: /images/projects/capitulo-site.webp
     width: 1600

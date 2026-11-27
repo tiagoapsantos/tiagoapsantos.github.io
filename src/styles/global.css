@@ -559,6 +559,8 @@ h1 { max-width: 900px; margin-bottom: 27px; font-family: var(--display); font-si
 .project-card-featured .project-gallery-stack { grid-template-columns: minmax(0, 1fr); width: 78%; margin-inline: auto; }
 .project-gallery-stack .project-image-link { aspect-ratio: 1425 / 904; }
 .project-gallery-stack .project-image-link img { width: 100%; height: 100%; object-fit: cover; object-position: top; border: 0; }
+.project-video-box { aspect-ratio: 1425 / 904; overflow: hidden; border: 1px solid var(--line); background: var(--wash); box-shadow: 0 10px 24px color-mix(in srgb, var(--ink) 12%, transparent); }
+.project-video { display: block; width: 100%; height: 100%; object-fit: cover; object-position: top; }
 
 @media (max-width: 700px) {
   .project-card-featured .project-gallery-stack { width: 100%; gap: 10px; }

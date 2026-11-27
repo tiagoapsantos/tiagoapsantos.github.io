@@ -4,6 +4,7 @@ kind: Plataforma web com CMS · Projecto pessoal
 title: Capítulo
 translationKey: capitulo
 caseStudy: true
+demoUrl: https://tiagoapsantos.github.io/capitulo-demo/
 sourceUrl: https://github.com/tiagoapsantos/capitulo-cms
 description: Plataforma de sites para confrarias gastronómicas e a sua federação, com um painel de gestão (CMS) multi-cliente pensado para quem não é técnico.
 tags: [Next.js, Payload CMS, TypeScript, SQLite, Multi-tenant]
@@ -32,4 +33,4 @@ Next.js e Payload CMS num só projecto, com o plugin oficial multi-cliente: cada
 
 ## Limitações
 
-Não existe demonstração pública; o código-fonte está disponível no GitHub para consulta (todos os direitos reservados). Em desenvolvimento usa SQLite; para produção está prevista a passagem para PostgreSQL num alojamento na União Europeia. A declaração de acessibilidade ainda não foi validada por uma avaliação formal.
+A demonstração pública é uma versão estática do site (sem o painel de gestão), gerada a partir do projecto; o código-fonte está disponível no GitHub para consulta (todos os direitos reservados). Em desenvolvimento usa SQLite; para produção está prevista a passagem para PostgreSQL num alojamento na União Europeia. A declaração de acessibilidade ainda não foi validada por uma avaliação formal.

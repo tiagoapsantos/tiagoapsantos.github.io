@@ -4,6 +4,7 @@ kind: Web platform with CMS · Personal project
 title: Capítulo
 translationKey: capitulo
 caseStudy: true
+demoUrl: https://tiagoapsantos.github.io/capitulo-demo/
 sourceUrl: https://github.com/tiagoapsantos/capitulo-cms
 description: Website platform for gastronomic brotherhoods and their federation, with a multi-tenant content management panel (CMS) designed for non-technical users.
 tags: [Next.js, Payload CMS, TypeScript, SQLite, Multi-tenant]
@@ -32,4 +33,4 @@ Next.js and Payload CMS in a single project, with the official multi-tenant plug
 
 ## Limitations
 
-There is no public demo; the source code is available on GitHub for viewing (all rights reserved). Development uses SQLite; production is planned on PostgreSQL with hosting in the European Union. The accessibility statement has not yet been validated by a formal audit.
+The public demo is a static version of the site (without the admin panel), generated from the project; the source code is available on GitHub for viewing (all rights reserved). Development uses SQLite; production is planned on PostgreSQL with hosting in the European Union. The accessibility statement has not yet been validated by a formal audit.

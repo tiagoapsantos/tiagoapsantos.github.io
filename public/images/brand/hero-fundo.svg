@@ -1,38 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 800" preserveAspectRatio="xMaxYMid slice">
-  <!-- Fundo do banner da página inicial: brilho suave, círculos concêntricos (como o logótipo) e grelha de pontos. -->
-  <defs>
-    <radialGradient id="brilho" cx="1170" cy="400" r="560" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#f17659" stop-opacity=".16"/>
-      <stop offset=".55" stop-color="#f17659" stop-opacity=".05"/>
-      <stop offset="1" stop-color="#f17659" stop-opacity="0"/>
-    </radialGradient>
-    <pattern id="pontos" width="32" height="32" patternUnits="userSpaceOnUse">
-      <circle cx="16" cy="16" r="1.1" fill="#f3f0e7" fill-opacity=".09"/>
-    </pattern>
-    <linearGradient id="desvanecer" x1="0" x2="1" y1="0" y2="0">
-      <stop offset=".35" stop-color="#fff" stop-opacity="0"/>
-      <stop offset=".8" stop-color="#fff" stop-opacity="1"/>
-    </linearGradient>
-    <mask id="mascara"><rect width="1600" height="800" fill="url(#desvanecer)"/></mask>
-  </defs>
-  <rect width="1600" height="800" fill="url(#brilho)"/>
-  <rect width="1600" height="800" fill="url(#pontos)" mask="url(#mascara)"/>
-  <g fill="none" stroke="#f3f0e7" stroke-opacity=".07" stroke-width="1">
-    <circle cx="1170" cy="400" r="110"/>
-    <circle cx="1170" cy="400" r="190"/>
-    <circle cx="1170" cy="400" r="270"/>
-    <circle cx="1170" cy="400" r="350"/>
-    <circle cx="1170" cy="400" r="430"/>
-    <circle cx="1170" cy="400" r="510"/>
-    <circle cx="1170" cy="400" r="590"/>
-  </g>
-  <!-- Dois arcos na cor de destaque -->
-  <g fill="none" stroke="#f17659" stroke-linecap="round">
-    <path d="M 1170 130 A 270 270 0 0 1 1420 296" stroke-width="2" stroke-opacity=".55"/>
-    <path d="M 820 400 A 350 350 0 0 1 900 177" stroke-width="1.5" stroke-opacity=".3"/>
-  </g>
-  <circle cx="1420" cy="296" r="4" fill="#f17659" fill-opacity=".8"/>
-  <circle cx="1170" cy="400" r="3" fill="#f3f0e7" fill-opacity=".35"/>
-  <line x1="1170" y1="0" x2="1170" y2="800" stroke="#f3f0e7" stroke-opacity=".04"/>
-  <line x1="560" y1="400" x2="1600" y2="400" stroke="#f3f0e7" stroke-opacity=".04"/>
+  <!-- Fundo do banner da página inicial: anéis claros (o degradê coral está no CSS) e um ponto escuro (como o logótipo). -->
+<defs>
+<pattern id="p" width="28" height="28" patternUnits="userSpaceOnUse"><circle cx="14" cy="14" r="1.2" fill="#202821" fill-opacity=".12"/></pattern>
+<linearGradient id="g" x1="0" x2="1"><stop offset=".4" stop-color="#fff" stop-opacity="0"/><stop offset=".75" stop-color="#fff"/></linearGradient><mask id="m"><rect width="1600" height="800" fill="url(#g)"/></mask></defs>
+<rect width="1600" height="800" fill="url(#p)" mask="url(#m)"/>
+<g fill="none" stroke="#fff7ef" stroke-opacity=".35"><circle cx="1200" cy="400" r="150"/>
+<circle cx="1200" cy="400" r="230"/>
+<circle cx="1200" cy="400" r="310"/>
+<circle cx="1200" cy="400" r="390"/>
+<circle cx="1200" cy="400" r="470"/>
+<circle cx="1200" cy="400" r="550"/>
+<circle cx="1200" cy="400" r="630"/></g>
+<circle cx="1200" cy="400" r="230" fill="none" stroke="#fff7ef" stroke-width="9"/>
+<circle cx="1376" cy="252" r="24" fill="#202821"/>
+<path d="M 900 400 A 300 300 0 0 1 1000 175" fill="none" stroke="#202821" stroke-width="3" stroke-linecap="round" stroke-opacity=".7"/>
 </svg>

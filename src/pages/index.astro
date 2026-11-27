@@ -4,7 +4,7 @@ import FeaturedProject from '../components/FeaturedProject.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { getProjects, projectHref } from '../data/projects';
 const allProjects = await getProjects('pt');
-const featured = allProjects.find((project) => project.slug === 'pedro-pires');
+const featured = allProjects.find((project) => project.slug === 'capitulo');
 const projects = allProjects.filter((project) => project.slug !== featured?.slug);
 const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
 ---

@@ -30,7 +30,7 @@ for (const [locale, prefix] of [['pt', ''], ['en', 'en/']]) {
   const home = read(prefix + 'index.html');
   const list = read(prefix + 'projects/index.html');
   assert.equal((list.match(/class="project-card project-card-rich/g) || []).length, entries.length); checks++;
-  assert.equal((home.match(/class="home-project-card"/g) || []).length, entries.filter(entry => entry.slug !== 'pedro-pires').length); checks++;
+  assert.equal((home.match(/class="home-project-card"/g) || []).length, entries.filter(entry => entry.slug !== 'capitulo').length); checks++;
   assert.ok(home.indexOf('featured-artist') < home.indexOf('class="home-project-card"')); checks++;
   for (const entry of entries.filter(entry => entry.caseStudy)) {
     assert.ok(existsSync(join('dist', prefix + 'projects', entry.slug, 'index.html')), 'missing case study ' + prefix + entry.slug); checks++;

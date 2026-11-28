@@ -4,7 +4,7 @@ import { createRequire } from 'node:module'
 import { readFileSync, writeFileSync } from 'node:fs'
 import path from 'node:path'
 // Precisa do Playwright e do Microsoft Edge: npm i -D @playwright/test (ou ajustar o caminho abaixo)
-const require = createRequire(import.meta.url)
+const require = createRequire(process.env.PLAYWRIGHT_DE || import.meta.url)
 const { chromium } = require('@playwright/test')
 
 const AQUI = path.dirname(new URL(import.meta.url).pathname.replace(/^\/([A-Z]:)/, '$1'))
@@ -19,7 +19,7 @@ const CV = {
     contacto: 'CONTACTO',
     perfil: ['PERFIL', 'Experiência profissional em marketing digital, conteúdos, design gráfico aplicado à publicidade, operações, atendimento e gestão de websites. Competências de desenvolvimento Web demonstradas em projectos pessoais funcionais, com apoio de IA ao desenvolvimento.'],
     competencias: ['COMPETÊNCIAS PROFISSIONAIS', ['Marketing digital e conteúdos', 'Design gráfico', 'Gestão de websites e e-commerce', 'Atendimento e operações', 'Gestão de conteúdos digitais', 'Tradução EN-PT', 'Suporte informático']],
-    tecnicas: ['TÉCNICAS - PROJECTOS PESSOAIS', 'HTML, CSS, JavaScript, TypeScript e Astro. Validação, testes e publicação web demonstrados em projectos pessoais.'],
+    tecnicas: ['TÉCNICAS - PROJECTOS PESSOAIS', 'HTML, CSS, JavaScript, TypeScript, Astro, React, Next.js e Payload CMS. Validação, testes e publicação web demonstrados em projectos pessoais.'],
     interesses: ['INTERESSES PROFISSIONAIS', 'AI Automation & Digital Operations; Web Development; AI-assisted Software Development. Integração de IA, APIs e cloud como áreas de interesse, não experiência comercial comprovada.'],
     idiomas: ['IDIOMAS', ['Português (nativo)', 'Inglês (avançado)', 'Espanhol (intermédio)', 'Francês (básico)']],
     projectos: [
@@ -54,7 +54,7 @@ const CV = {
     contacto: 'CONTACT',
     perfil: ['PROFILE', 'Professional experience in digital marketing, content, advertising-focused graphic design, operations, customer service and website management. Web development skills demonstrated through functional personal projects, with AI-assisted development.'],
     competencias: ['PROFESSIONAL SKILLS', ['Digital marketing and content', 'Graphic design', 'Website and e-commerce administration', 'Customer service and operations', 'Digital content management', 'EN-PT translation', 'IT support']],
-    tecnicas: ['TECHNICAL - PERSONAL PROJECTS', 'HTML, CSS, JavaScript, TypeScript and Astro. Validation, testing and web deployment demonstrated through personal projects.'],
+    tecnicas: ['TECHNICAL - PERSONAL PROJECTS', 'HTML, CSS, JavaScript, TypeScript, Astro, React, Next.js and Payload CMS. Validation, testing and web deployment demonstrated through personal projects.'],
     interesses: ['CAREER INTERESTS', 'AI Automation & Digital Operations; Web Development; AI-assisted Software Development. AI, API and cloud integration are interests, not demonstrated commercial experience.'],
     idiomas: ['LANGUAGES', ['Portuguese (native)', 'English (advanced)', 'Spanish (intermediate)', 'French (basic)']],
     projectos: [

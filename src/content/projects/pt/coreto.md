@@ -11,7 +11,7 @@ images:
   - src: /images/projects/coreto-site.webp
     width: 1600
     height: 1160
-    alt: Página inicial da demonstração do Coreto, com a apresentação da plataforma e a pesquisa de bandas livres por dia, distrito e serviço.
+    alt: Página inicial da demonstração do Coreto, com a fotografia de um coreto, a apresentação da plataforma e a pesquisa de bandas livres por dia, distrito e serviço.
   - src: /images/projects/coreto-cms.webp
     width: 1600
     height: 1054

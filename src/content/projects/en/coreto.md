@@ -11,7 +11,7 @@ images:
   - src: /images/projects/coreto-site.webp
     width: 1600
     height: 1160
-    alt: Home page of the Coreto demo, with the platform introduction and the search for free bands by date, district and service.
+    alt: Home page of the Coreto demo, with a photo of a bandstand, the platform introduction and the search for free bands by date, district and service.
   - src: /images/projects/coreto-cms.webp
     width: 1600
     height: 1054

@@ -32,7 +32,7 @@ O único dado pessoal é o nome e o contacto de quem pede orçamento. Os pedidos
 
 ## Decisões técnicas
 
-Parte do código do Capítulo (Next.js e Payload CMS com o plugin multi-cliente), adaptado com coleções próprias: datas ocupadas, repertório e pedidos. As ilustrações de exemplo são geradas pelo próprio projeto, sem fotografias de terceiros. A demonstração pública é estática: a pesquisa de bandas livres corre no navegador a partir de dados exportados (sem as notas internas das bandas).
+Parte do código do Capítulo (Next.js e Payload CMS com o plugin multi-cliente), adaptado com coleções próprias: datas ocupadas, repertório e pedidos. As fotografias de exemplo vêm do Unsplash (licença livre) e foram escolhidas sem rostos reconhecíveis, porque ilustram bandas fictícias. A demonstração pública é estática: a pesquisa de bandas livres corre no navegador a partir de dados exportados (sem as notas internas das bandas).
 
 ## Limitações
 

@@ -5,3 +5,5 @@ dist/
 
 # Raw working screenshots; only optimised WebP files are public
 docs/pedro-captures/
+scripts/cv/cv-*.html
+scripts/cv/cv-*.png
